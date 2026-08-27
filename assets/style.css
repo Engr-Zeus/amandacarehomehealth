@@ -1,0 +1,106 @@
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Unbounded:wght@200..900&display=swap');
+ 
+@font-face {
+  font-family: 'NaN Druid Sans';
+  src: url('../assets/fonts/NaN-Druid-Sans.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+    font-family: 'Oceanic Grotesk';
+    src: url('../assets/fonts/OceanicGrotesk.woff') format('woff');
+    font-weight: 500;
+    font-style:normal;
+    font-display: swap;
+}
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "NaN Druid Sans", Trebuchet MS, sans-serif;
+}
+
+ /* This style is for the green gradient text */
+.text-gradient {
+    background-image: linear-gradient(to right, #4ade80, #bef264);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-text{
+    /* font-family: "Unbounded", sans-serif; */
+    padding: 10px;
+    margin-bottom: 28px;
+    color: #ffff;
+    font-weight: 500;
+}
+.zip-code{
+    border-radius: 32px;
+    background-color: rgba(247, 245, 240, 0.16);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.section-members h2{
+    font-weight: 550;
+    font-size: 40px;
+    line-height: 40px;
+}
+.logo img {
+    display: block;
+    max-width: none;
+}
+.when-it-is-not-you{
+    font-family: "NaN Druid Sans", Trebuchet MS, sans-serif;
+}
+.when-it-is-not-you .section-safety{
+    transform: scale(1.1);
+}
+
+.when-it-is-not-you h2{
+    font-weight: 550;
+    font-size: 3rem;
+    letter-spacing: -0.0625rem;
+    line-height: 3.5rem;
+}
+
+.more-than-access .access-p{
+    font-family: Arial, sans-serif;
+}
+
+/* marquee */
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 25s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 25s linear infinite;
+}
+
+.marquee-section{
+    transform: scale(1.1);
+}
+.find-care section{
+    height:560px;
+}
+
+
+/* GETTING STARTED */
+.getting-started-header {
+    border-bottom: 3px solid #dddddd; 
+}
+.tracking-tight{
+    padding-top: 70px;
+    font-weight:bolder;
+}

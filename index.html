@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amandacare.com Hero Recreation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/images/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .bg-care-hero {
+            background-image: url('./assets/images/hero-greatercare-large2.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <main class="min-h-screen bg-care-hero relative flex flex-col justify-between p-4 md:p-8">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-black/10 pointer-events-none"></div>
+
+        <!-- Header Content -->
+        <header class="relative w-full flex items-center justify-between z-50 py-2">
+
+            <!-- Left: Logo & Hamburger -->
+            <div class="flex items-center gap-3">
+                <button id="mobile-menu-btn" class="p-1 lg:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" class="h-24 w-auto md:h-30 object-contain">
+                </div>
+            </div>
+
+            <!-- Center & Right: Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8">
+                <nav class="flex items-center gap-10">
+
+                    <!-- 1: Find care (Wide Dropdown) -->
+                    <details class="nav-dropdown group relative">
+                        <summary
+                            class="flex items-center gap-1.5 text-base font-semibold text-white cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
+                            Find care
+                            <svg class="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+
+                        <div
+                            class="absolute left-0 mt-3 w-[800px] rounded-3xl bg-white text-slate-800 shadow-2xl z-50 overflow-hidden flex">
+                            <!-- Sidebar -->
+                            <div class="w-56 bg-[#F9F7F2] p-4 flex flex-col gap-1 shrink-0">
+                                <button
+                                    class="flex items-center justify-between w-full px-4 py-3 bg-white font-bold text-slate-900 rounded-xl shadow-sm text-left">
+                                    Child care
+                                    <svg class="w-4 h-4 text-slate-800" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <button
+                                    class="w-full px-4 py-3 font-semibold text-slate-800 hover:bg-black/5 rounded-xl text-left transition-colors">Senior
+                                    care</button>
+                                <button
+                                    class="w-full px-4 py-3 font-semibold text-slate-800 hover:bg-black/5 rounded-xl text-left transition-colors">Adult
+                                    care</button>
+                                <button
+                                    class="w-full px-4 py-3 font-semibold text-slate-800 hover:bg-black/5 rounded-xl text-left transition-colors">Pet
+                                    care</button>
+                                <button
+                                    class="w-full px-4 py-3 font-semibold text-slate-800 hover:bg-black/5 rounded-xl text-left transition-colors">Housekeeping</button>
+                                <button
+                                    class="w-full px-4 py-3 font-semibold text-slate-800 hover:bg-black/5 rounded-xl text-left transition-colors">Tutoring</button>
+                            </div>
+
+                            <!-- Content Grid -->
+                            <div class="flex-1 grid grid-cols-3 gap-6 p-6 items-start">
+                                <div class="flex flex-col gap-3 font-medium text-[#2E6A56]">
+                                    <a href="#" class="underline underline-offset-2 hover:opacity-80">Babysitters</a>
+                                    <a href="#" class="hover:underline">Overnight babysitters</a>
+                                    <a href="#" class="hover:underline">Nannies</a>
+                                    <a href="#" class="hover:underline">Night nannies</a>
+                                    <a href="#" class="hover:underline">Daycares</a>
+                                    <a href="#" class="hover:underline">Drop-in child care</a>
+                                </div>
+                                <div class="flex flex-col gap-3 font-medium text-[#2E6A56]">
+                                    <a href="#" class="hover:underline">Preschools</a>
+                                    <a href="#" class="flex items-center gap-2 hover:underline">
+                                        Activities & camps
+                                        <span
+                                            class="bg-[#D1F39B] text-slate-900 text-xs font-bold px-1.5 py-0.5 rounded">NEW</span>
+                                    </a>
+                                    <a href="#" class="hover:underline">Mothers helpers</a>
+                                    <a href="#" class="hover:underline">After school transportation</a>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">More
+                                        info</h4>
+                                    <a href="#" class="font-semibold text-slate-800 hover:text-black">Intro to child
+                                        care</a>
+                                    <a href="#" class="font-semibold text-slate-800 hover:text-black">Plans &
+                                        pricing</a>
+                                    <a href="#" class="font-semibold text-slate-800 hover:text-black">Safety center</a>
+                                    <a href="#"
+                                        class="font-semibold text-slate-800 hover:text-black leading-snug">Employer-sponsored
+                                        benefits</a>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- 2: Find Jobs -->
+                    <details class="nav-dropdown group relative">
+                        <summary
+                            class="flex items-center gap-1.5 text-base font-semibold text-white cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
+                            Find jobs
+                            <svg class="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <div class="absolute left-0 mt-3 w-60 rounded-3xl bg-white text-slate-800 shadow-xl p-4 z-50">
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Child
+                                care jobs</a>
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Senior
+                                care jobs</a>
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Pet
+                                care jobs</a>
+                        </div>
+                    </details>
+
+                    <!-- 3: List your business -->
+                    <details class="nav-dropdown group relative">
+                        <summary
+                            class="flex items-center gap-1.5 text-base font-semibold text-white cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
+                            List your business
+                            <svg class="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <div class="absolute left-0 mt-3 w-60 rounded-3xl bg-white text-slate-800 shadow-xl p-4 z-50">
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Early
+                                learning centers</a>
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Senior
+                                living centers</a>
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Activities
+                                & camps</a>
+                        </div>
+                    </details>
+
+                    <!-- 4: Resources -->
+                    <details class="nav-dropdown group relative">
+                        <summary
+                            class="flex items-center gap-1.5 text-base font-semibold text-white cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
+                            Resources
+                            <svg class="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <div class="absolute left-0 mt-3 w-60 rounded-3xl bg-white text-slate-800 shadow-xl p-4 z-50">
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Articles
+                                & Guides</a>
+                            <a href="#"
+                                class="block px-4 py-3 font-semibold rounded-xl hover:bg-slate-100 transition-colors">Safety
+                                Center</a>
+                        </div>
+                    </details>
+
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-base font-semibold text-white hover:underline">Log in</a>
+                    <a href="#"
+                        class="bg-lime-200 text-slate-800 text-base font-semibold px-8 py-2.5 rounded-full hover:bg-lime-300 transition">Join
+                        now</a>
+                </div>
+            </div>
+
+            <!-- Mobile Action Button -->
+            <div class="lg:hidden">
+                <a href="#" class="bg-lime-200 text-slate-800 text-sm font-semibold px-5 py-2 rounded-full">Join now</a>
+            </div>
+
+        </header>
+
+        <!-- Main Hero Text Section -->
+        <div class="hero-text relative z-10 max-w-4xl my-auto py-12">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight">
+                Connecting families with <br class="hidden sm:inline"> quality, local caregivers
+            </h1>
+        </div>
+
+        <!-- Search Box (Desktop) -->
+        <div
+            class="relative z-10 p-8 md:p-10 rounded-3xl bg-white/20 backdrop-blur-md shadow-lg zip-code border border-white/20 w-full max-w-md hidden md:block mb-0">
+            <div class="relative mb-4">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                        </path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+                <input type="text" id="zip_code"
+                    class="w-full bg-white text-slate-800 border-none rounded-2xl px-12 py-4 text-lg focus:ring-2 focus:ring-lime-300 placeholder:text-gray-400 outline-none"
+                    placeholder="ZIP code">
+            </div>
+            <button
+                class="w-full bg-lime-200 text-slate-800 font-semibold text-lg py-3.5 rounded-full shadow-md hover:bg-lime-300 transition">Search</button>
+        </div>
+
+        <!-- Mobile Search (Fixed Bottom) -->
+        <div class="fixed bottom-0 left-0 w-full p-4 bg-white md:hidden z-40 border-t border-gray-200 shadow-2xl">
+            <button class="w-full bg-lime-200 text-slate-800 font-semibold text-lg py-3.5 rounded-full shadow-md">Find
+                Caregivers</button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-slate-900/95 z-50 flex flex-col p-6 text-white hidden lg:hidden overflow-y-auto">
+            <div class="flex items-center justify-between mb-8">
+                <img src="./assets/images/logo.png" alt="logo" class="h-12 w-auto object-contain">
+                <button id="close-menu-btn" class="p-1 text-white">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-6 text-xl font-medium">
+                <a href="#" class="py-2 border-b border-white/10">Find care</a>
+                <a href="#" class="py-2 border-b border-white/10">Find jobs</a>
+                <a href="#" class="py-2 border-b border-white/10">List your business</a>
+                <a href="#" class="py-2 border-b border-white/10">Resources</a>
+                <a href="#" class="py-2">Log in</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- membership for every section -->
+    <div class="section-members">
+        <!-- Services / Seasons of Life Section -->
+        <section class="bg-[#F9F7F2] py-16 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Section Heading -->
+                <h2 class="text-center mb-12 tracking-tight">
+                    One membership for every season of life
+                </h2>
+
+                <!-- Cards Row -->
+                <div class="flex gap-4 overflow-x-auto pb-3 text-center lg:grid lg:grid-cols-6 lg:overflow-visible">
+
+                    <!-- Card 1: Child care -->
+                    <a href="#"
+                        class="group bg-white rounded-3xl p-4 flex flex-col justify-between h-[220px] min-w-[170px] lg:min-w-0 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-slate-900">Child care</span>
+                            <svg class="w-4 h-4 text-slate-900 transition-transform group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-center items-end h-full pt-2">
+                            <img src="./assets/images/members/child-care.webp" alt="Child care"
+                                class="max-h-28 object-contain">
+                        </div>
+                    </a>
+
+                    <!-- Card 2: Senior care -->
+                    <a href="#"
+                        class="group bg-white rounded-3xl p-4 flex flex-col justify-between h-[220px] min-w-[170px] lg:min-w-0 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-slate-900">Senior care</span>
+                            <svg class="w-4 h-4 text-slate-900 transition-transform group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-center items-end h-full pt-2">
+                            <img src="./assets/images/members/senior-care.webp" alt="Senior care"
+                                class="max-h-28 object-contain">
+                        </div>
+                    </a>
+
+                    <!-- Card 3: Adult care -->
+                    <a href="#"
+                        class="group bg-white rounded-3xl p-4 flex flex-col justify-between h-[220px] min-w-[170px] lg:min-w-0 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-slate-900">Adult care</span>
+                            <svg class="w-4 h-4 text-slate-900 transition-transform group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-center items-end h-full pt-2">
+                            <img src="./assets/images/members/adult-care.webp" alt="Adult care"
+                                class="max-h-28 object-contain">
+                        </div>
+                    </a>
+
+                    <!-- Card 4: Pet care -->
+                    <a href="#"
+                        class="group bg-white rounded-3xl p-4 flex flex-col justify-between h-[220px] min-w-[170px] lg:min-w-0 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-slate-900">Pet care</span>
+                            <svg class="w-4 h-4 text-slate-900 transition-transform group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-center items-end h-full pt-2">
+                            <img src="./assets/images/members/pet-care.webp" alt="pet-care"
+                                class="max-h-28 object-contain">
+                        </div>
+                    </a>
+
+                    <!-- Card 5: Housekeeping -->
+                    <a href="#"
+                        class="group bg-white rounded-3xl p-4 flex flex-col justify-between h-[220px] min-w-[170px] lg:min-w-0 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-slate-900">Housekeeping</span>
+                            <svg class="w-4 h-4 text-slate-900 transition-transform group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-center items-end h-full pt-2">
+                            <img src="./assets/images/members/house-keeping.webp" alt="Housekeeping"
+                                class="max-h-28 object-contain">
+                        </div>
+                    </a>
+
+                    <!-- Card 6: Tutoring -->
+                    <a href="#"
+                        class="group bg-white rounded-3xl p-4 flex flex-col justify-between h-[220px] min-w-[170px] lg:min-w-0 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-slate-900">Tutoring</span>
+                            <svg class="w-4 h-4 text-slate-900 transition-transform group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-center items-end h-full pt-2">
+                            <img src="./assets/images/members/tutoring.webp" alt="Tutoring"
+                                class="max-h-28 object-contain">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- when it is not you -->
+    <div class="when-it-is-not-you">
+        <!-- SECTION 1: When it's not you, it's amandacare.com -->
+        <section class="bg-white py-16 px-4 md:px-8 overflow-hidden">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Header Row -->
+                <div class="flex items-center justify-between gap-4 mb-8">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+                        When it’s not you, it’s amandacare.com<span class="text-xs align-super">™</span>
+                    </h2>
+                    <a href="#"
+                        class="inline-block bg-[#0E5244] text-[#d2f5a5] font-semibold px-6 py-3 rounded-full hover:bg-[#0A3F34] transition-colors shrink-0">
+                        Get started
+                    </a>
+                </div>
+                <!-- Cards Container (Horizontal scroll on smaller screens, grid on desktop) -->
+                <div
+                    class="flex lg:grid lg:grid-cols-4 gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-none card-scaling">
+
+                    <!-- Card 1: Sarah -->
+                    <div
+                        class="relative shrink-0 w-[280px] sm:w-[300px] lg:w-auto h-[380px] rounded-3xl overflow-hidden group shadow-sm snap-center">
+                        <!-- Front Side (Photo) -->
+                        <img src="./assets/images/when-its-you/Sarah.5ef7ecd0.jpeg" alt="Sarah"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h3 class="text-2xl font-bold">Sarah</h3>
+                                <p class="text-sm font-medium text-slate-200">Queen of the playground</p>
+                            </div>
+                            <div>
+                                <div class="flex text-amber-400 text-sm mb-1">★★★★★</div>
+                                <p class="text-xs font-medium text-slate-300">Sitter with 10 years experience</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay (Review) -->
+                        <div
+                            class="absolute inset-0 bg-[#E2FFB6] p-6 flex flex-col justify-between text-slate-900 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 rounded-3xl">
+                            <div>
+                                <p class="text-sm font-bold leading-relaxed mb-3">
+                                    “Sarah is amazing with our kids! She always brings fun activities and gives us total
+                                    peace of mind.”
+                                </p>
+                                <p class="text-xs font-bold text-slate-700">Jessica M.</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold mb-2">Can help with</p>
+                                <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold">
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">After school</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Homework help</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Crafts</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">+8 more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Allexus -->
+                    <div
+                        class="relative shrink-0 w-[280px] sm:w-[300px] lg:w-auto h-[380px] rounded-3xl overflow-hidden group shadow-sm snap-center">
+                        <!-- Front Side (Photo) -->
+                        <img src="./assets/images/when-its-you/Allexus.c9289491.jpeg" alt="Allexus"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h3 class="text-2xl font-bold">Allexus</h3>
+                                <p class="text-sm font-medium text-slate-200">Newborn care specialist</p>
+                            </div>
+                            <div>
+                                <div class="flex text-amber-400 text-sm mb-1">★★★★★</div>
+                                <p class="text-xs font-medium text-slate-300">Nanny with 7 years experience</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay (Review) -->
+                        <div
+                            class="absolute inset-0 bg-[#E2FFB6] p-6 flex flex-col justify-between text-slate-900 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 rounded-3xl">
+                            <div>
+                                <p class="text-sm font-bold leading-relaxed mb-3">
+                                    “Allexus was a lifesaver during our baby’s first few months. Gentle, professional,
+                                    and knowledgeable.”
+                                </p>
+                                <p class="text-xs font-bold text-slate-700">David & Amanda</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold mb-2">Can help with</p>
+                                <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold">
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Infant care</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Sleep training</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Night care</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">+5 more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Kelly -->
+                    <div
+                        class="relative shrink-0 w-[280px] sm:w-[300px] lg:w-auto h-[380px] rounded-3xl overflow-hidden group shadow-sm snap-center">
+                        <!-- Front Side (Photo) -->
+                        <img src="./assets/images/when-its-you/Kelly.008404a0.jpeg" alt="Kelly"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h3 class="text-2xl font-bold">Kelly</h3>
+                                <p class="text-sm font-medium text-slate-200">Dementia care helper</p>
+                            </div>
+                            <div>
+                                <div class="flex text-amber-400 text-sm mb-1">★★★★★</div>
+                                <p class="text-xs font-medium text-slate-300">Senior caregiver with 10 years experience
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay (Review) -->
+                        <div
+                            class="absolute inset-0 bg-[#E2FFB6] p-6 flex flex-col justify-between text-slate-900 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 rounded-3xl">
+                            <div>
+                                <p class="text-sm font-bold leading-relaxed mb-3">
+                                    “Kelly is a very kind and compassionate caregiver. I am very satisfied with the
+                                    level of care that she provides for my mother!”
+                                </p>
+                                <p class="text-xs font-bold text-slate-700">Gail M.</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold mb-2">Can help with</p>
+                                <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold">
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Respite care</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Companion care</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Dementia care</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Transportation</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">Light housecleaning</span>
+                                    <span class="bg-white/80 px-2.5 py-1 rounded-full">+17 more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Pink Feature Card -->
+                    <div
+                        class="shrink-0 w-[280px] sm:w-[300px] lg:w-auto bg-[#F8BBD0] h-[380px] rounded-3xl p-6 flex flex-col justify-between text-slate-900 snap-center">
+                        <h3 class="text-2xl font-bold leading-snug">
+                            Great experiences happen outside the home, too.
+                        </h3>
+                        <div class="space-y-3 font-semibold text-sm">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-slate-800 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
+                                <span>Activities and camps</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-slate-800 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                    </path>
+                                </svg>
+                                <span>Daycares</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-slate-800 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                    </path>
+                                </svg>
+                                <span>Senior living communities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Safety is at the heart of our community -->
+        <section class="bg-white py-16 px-4 md:px-8 border-t border-slate-100 section-safety">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+
+                <!-- Left: Image Composition -->
+                <div class="relative w-full md:w-1/2 max-w-md aspect-square">
+                    <!-- Main Top Image (Senior + Cat) -->
+                    <div class="">
+                        <img src="./assets/images/when-its-you/image.png" alt="Senior with cat"
+                            class="w-full h-full object-cover transform">
+                    </div>
+
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <h2 class="text-slate-900 leading-tight">
+                        Safety is at the heart of our community
+                    </h2>
+
+                    <ul class="space-y-4 text-slate-700 text-sm md:text-base font-medium">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#0E5244] shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>All individual caregivers on amandacare.com start with a required background check<sup
+                                    class="text-xs">1</sup></span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#0E5244] shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Monitored job posts, messages and a 24/7 safety hotline</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#0E5244] shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Tips and resources to help you make safer hiring choices</span>
+                        </li>
+                    </ul>
+
+                    <a href="#"
+                        class="inline-block bg-[#0E5244] text-[#d2f5a5] font-semibold px-8 py-3 rounded-full hover:bg-[#0A3F34] transition-colors pt-3">
+                        Learn more
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- more than access -->
+    <div class="more-than-access">
+        <!-- SECTION: More than access. It's support for every step. -->
+        <section class="py-10 px-0  bg-white overflow-hidden">
+            <!-- Container: Rounded card on large screens, full-bleed edge-to-edge on XL screens -->
+            <div
+                class="max-w-7xl mx-auto bg-[#B6EEF5] xl:rounded-none lg:rounded-3xl lg:px-12 relative overflow-hidden">
+
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+
+                    <!-- Left Column: Content & Feature Cards -->
+                    <div class="w-full lg:w-3/5 xl:w-4/5 space-y-8 z-10 pb-6">
+
+                        <!-- Headlines -->
+                        <div>
+                            <h2
+                                class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight tracking-tight mb-3">
+                                More than access.<br>It's support for every step.
+                            </h2>
+                            <p class="text-2xl sm:text-3xl text-slate-800">
+                                Plans start at $12.99/mo
+                            </p>
+                        </div>
+
+                        <!-- 2x2 Feature Cards Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 access-p">
+
+                            <!-- Feature 1 -->
+                            <div class="bg-white rounded-2xl p-6 shadow-sm ">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Search safer</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Use tools you won't get with social media or referrals
+                                </p>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Quality care</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Find expertise you need—dementia support, infant care and more
+                                </p>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Unlimited connections</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Message and video interview caregivers, without sharing your personal info
+                                </p>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Exclusive discounts</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Save an average of $1000/yr on home products and services*
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div>
+                            <a href="#"
+                                class="inline-block bg-[#0E5244] text-[#d2f5a5] font-semibold text-lg px-12 py-4 rounded-full hover:bg-[#0A3F34] transition-colors shadow-sm">
+                                See plans & pricing
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: Phone Mockup Image -->
+                    <div class="w-full lg:w-1/5 xl:w-1/5 top-20 relative">
+                        <!-- Phone Image clipped to sit flush or peek from right side -->
+                        <div class="w-[300px] sm:w-[360px] lg:w-[400px] xl:w-[440px] shrink-0 ml-[70px] lg:mr-0">
+                            <img src="./assets/images/more-than-access/iphone.png" alt="App Preview"
+                                class="w-full h-auto object-contain drop-shadow-xl">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- marquee section -->
+    <div class="marquee-section">
+        <!-- SECTION: Dual Direction Marquee -->
+        <section class="py-12 bg-white overflow-hidden select-none">
+            <div class="flex flex-col gap-8">
+
+                <!-- TOP ROW: Moves Left -->
+                <div class="flex overflow-hidden whitespace-nowrap">
+                    <div class="flex items-center gap-8 animate-marquee-left shrink-0">
+                        <!-- Set 1 -->
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Day cares</span>
+                        <img src="./assets/images/marquee/play.jpeg" alt="Day care"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#0E5244]">Activities and camps</span>
+                        <img src="./assets/images/marquee/camp.jpeg" alt="Activities and camps"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Infant care</span>
+                        <img src="./assets/images/marquee/infant.jpeg" alt="Infant care"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+
+                        <!-- Duplicate for Seamless Infinite Loop -->
+                        <!-- set 2 -->
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Cat Whispers</span>
+                        <img src="./assets/images/marquee/cat.jpeg" alt="cat whispers"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#0E5244]">Toddler wranglers</span>
+                        <img src="./assets/images/marquee/toddler.jpeg" alt="Toddler wranglers"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Math tutors</span>
+                        <img src="./assets/images/marquee/math.jpeg" alt="Math Tutors"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW: Moves Right -->
+                <div class="flex overflow-hidden whitespace-nowrap pt-5">
+                    <div class="flex items-center gap-8 animate-marquee-right shrink-0">
+                        <!-- Set 2 -->
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Cat Whispers</span>
+                        <img src="./assets/images/marquee/cat.jpeg" alt="cat whispers"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#0E5244]">Toddler wranglers</span>
+                        <img src="./assets/images/marquee/toddler.jpeg" alt="Toddler wranglers"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Math tutors</span>
+                        <img src="./assets/images/marquee/math.jpeg" alt="Math Tutors"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Senior Companions</span>
+                        <img src="./assets/images/marquee/companion.jpeg" alt="Cleaner"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#0E5244]">Adult care last minute</span>
+                        <img src="./assets/images/marquee/adult-care.jpeg" alt="Adult care last minute"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                        <span class="text-3xl md:text-5xl font-serif text-[#F48FB1]">Dementia care</span>
+                        <img src="./assets/images/marquee/dementia.jpeg" alt="Dementia care"
+                            class="w-20 h-12 md:w-28 md:h-16 object-cover rounded-2xl shadow-sm">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- find care -->
+    <div class="find-care">
+        <!-- SECTION: Find care on your terms -->
+        <section class="bg-[#F8F6F0] pl-6 md:pl-12 lg:pl-16 overflow-hidden relative">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-8">
+
+                <!-- Left Column: Content -->
+                <div class="w-full lg:w-6/12 space-y-8 shrink-0 z-10 pt-16">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+                        Find care on your terms
+                    </h2>
+
+                    <div class="space-y-6 max-w-md">
+                        <!-- Point 1 -->
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Post a job</h3>
+                            <p class="text-slate-700 leading-relaxed text-base">
+                                Tell us exactly what you need, and let caregivers apply directly.
+                            </p>
+                        </div>
+
+                        <!-- Point 2 -->
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Compare profiles</h3>
+                            <p class="text-slate-700 leading-relaxed text-base">
+                                From experience and trainings to location and pay.
+                            </p>
+                        </div>
+
+                        <!-- Point 3 -->
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Read reviews</h3>
+                            <p class="text-slate-700 leading-relaxed text-base">
+                                No need to ask around, see what others have said.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="pt-2">
+                        <a href="#"
+                            class="inline-block bg-[#0E5244] text-[#d2f5a5] font-semibold px-8 py-3.5 rounded-full hover:bg-[#0A3F34] transition-colors shadow-sm">
+                            Get started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Canvas with Bleeding Elements -->
+                <div class="w-full lg:w-7/12 relative min-h-[500px] sm:min-h-[550px]">
+                    <div class="grid grid-cols-2 gap-6 items-start">
+
+                        <!-- Column 1 (Middle): Jessica + Dad & Baby + Happy Girl -->
+                        <div class="-mt-10 sm:-mt-12">
+
+                            <!-- 1. Jessica G. Card -->
+                            <div class="bg-[#D2F5A5] rounded-[32px] p-2 mb-5 shadow-xs w-full max-w-[260px] ml-auto">
+                                <div class="object-contain h-100 rounded-[22px] overflow-hidden p-5 mb-3">
+                                    <img src="./assets/images/find-care/jessica-g.jpeg" alt="Jessica G."
+                                        class="w-full h-full object-cover rounded-[22px]">
+                                </div>
+                            </div>
+
+                            <!-- 2. Dad with Baby Image Card -->
+                            <div
+                                class="w-full max-w-[260px] ml-auto mb-5 h-36 sm:h-40 rounded-[32px] overflow-hidden shadow-xs">
+                                <img src="./assets/images/find-care/care.jpeg" alt="Dad holding baby"
+                                    class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- 3. Happy Girl Image Card -->
+                            <div
+                                class="w-full max-w-[260px] ml-auto h-40 sm:h-44 rounded-[32px] overflow-hidden shadow-xs">
+                                <img src="./assets/images/find-care/albino.jpeg" alt="Happy girl making faces"
+                                    class="w-full h-full object-contain">
+                            </div>
+
+                        </div>
+
+                        <!-- Column 2 (Right): Bleeding Pink Dog + Jasmine App Profile -->
+                        <div class="space-y-6 -mt-10 sm:-mt-12">
+
+                            <!-- 1. Pink Dog Card (Bleeds off top) -->
+                            <div class="w-full h-44 sm:h-48 rounded-[32px] overflow-hidden bg-[#F8BBD0] shadow-xs">
+                                <img src="./assets/images/find-care/dog.jpeg" alt="Dog on pink background"
+                                    class="w-full h-full object-contain">
+                            </div>
+
+                            <!-- 2. Light Green Jasmine Profile Card -->
+                            <div class="bg-[#D2F5A5] rounded-[36px] p-3 sm:p-4 shadow-sm w-full">
+                                <div class="w-full rounded-[26px] overflow-hidden shadow-xs p-4">
+                                    <img src="./assets/images/find-care/phone.png" alt="Jasmine S. Profile"
+                                        class="w-full h-70 object-contain">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- no. of care givers -->
+    <div class="no-of-caregivers">
+        <!-- SECTION: Trust Badges (Over 45 million families) -->
+        <section class="bg-[#B6EEF5] py-16 px-4 text-center">
+            <div class="max-w-5xl mx-auto space-y-8">
+
+                <!-- Heading -->
+                <h2 class="text-2xl sm:text-3xl md:text-3xl font-bold text-slate-900 tracking-tight">
+                    Over 45 million families and caregivers have turned to amandacare.com
+                </h2>
+
+                <!-- Badges Row -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 pt-2">
+
+                    <!-- BBB Accredited Business Badge -->
+                    <div class="flex flex-col items-center">
+                        <div class="h-20 sm:h-24 rounded-2xl overflow-hidden shadow-xs">
+                            <img src="./assets/images/no-of-caregivers/rating.png" alt="BBB Accredited Business"
+                                class="h-full w-auto object-contain">
+                        </div>
+                        <span class="text-sm font-semibold text-[#1B6B7C] mt-2">
+                            Rating A+
+                        </span>
+                    </div>
+
+                    <!-- USA Today America's Best Customer Service Badge -->
+                    <div class="flex flex-col items-center">
+                        <div class="h-20 sm:h-24 rounded-2xl overflow-hidden shadow-xs">
+                            <img src="./assets/images/no-of-caregivers/usa-today.png"
+                                alt="USA Today America's Best Customer Service 2026" class="h-full w-auto object-cover">
+                        </div>
+                        <span class="text-sm font-semibold text-[#1B6B7C] mt-2">
+                            ***
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <!-- FOOTER SECTION -->
+    <footer class="bg-[#034A3B] text-[#D2F5A5] pt-16 pb-12 px-6 md:px-12 lg:px-16">
+        <div class="max-w-7xl mx-auto space-y-12 px-20">
+
+            <!-- Top Row: Links Columns + App Badges & Socials -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
+
+                <!-- Column 1: About amandacare.com -->
+                <div class="space-y-4">
+                    <h3 class=" text-lg">About amandacare.com</h3>
+                    <ul class="space-y-2.5 text-sm font-medium">
+                        <li><a href="#" class="hover:underline transition-all">About us</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Newsroom</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Careers</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Terms of use</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Privacy policy</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Care.org</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Get help -->
+                <div class="space-y-4">
+                    <h3 class="=text-lg">Get help</h3>
+                    <ul class="space-y-2.5 text-sm font-medium">
+                        <li><a href="#" class="hover:underline transition-all">Safety</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Articles & Guides</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Help Center/Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Discover -->
+                <div class="space-y-4 lg:col-span-1">
+                    <h3 class="text-lg">Discover</h3>
+                    <ul class="space-y-2.5 text-sm font-medium">
+                        <li><a href="#" class="hover:underline transition-all">Homepay™ - Nanny Tax help</a></li>
+                        <li><a href="#" class="hover:underline transition-all">List your early learning center</a></li>
+                        <li><a href="#" class="hover:underline transition-all">List your activity / camps center</a>
+                        </li>
+                        <li><a href="#" class="hover:underline transition-all">List your senior living community</a>
+                        </li>
+                        <li><a href="#" class="hover:underline transition-all">Care for business</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Become an affiliate</a></li>
+                        <li><a href="#" class="hover:underline transition-all">amandacare.com directory</a></li>
+                        <li><a href="#" class="hover:underline transition-all">Care cost guides</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 & 5: App Store Badges & Social Media Icons -->
+                <div class="lg:col-span-2 flex flex-col items-start lg:items-end space-y-6">
+
+                    <!-- App Badges -->
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="inline-block hover:opacity-90 transition-opacity">
+                            <img src="./assets/images/appStore.svg" alt="Download on the App Store"
+                                class="h-8 w-auto">
+                        </a>
+                        <a href="#" class="inline-block hover:opacity-90 transition-opacity">
+                            <img src="./assets/images/googlePlay.svg" alt="Get it on Google Play"
+                                class="h-13 w-auto">
+                        </a>
+                    </div>
+
+                    <!-- Social Media Icons (Light-green circular buttons) -->
+                    <div class="flex items-center gap-3 pt-2">
+                        <!-- Facebook -->
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#D2F5A5] text-[#034A3B] flex items-center justify-center hover:bg-white transition-colors">
+                            <!-- REPLACE WITH YOUR FACEBOOK SVG -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+
+                        <!-- X / Twitter -->
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#D2F5A5] text-[#034A3B] flex items-center justify-center hover:bg-white transition-colors">
+                            <!-- REPLACE WITH YOUR X SVG -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#D2F5A5] text-[#034A3B] flex items-center justify-center hover:bg-white transition-colors">
+                            <!-- REPLACE WITH YOUR YOUTUBE SVG -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#D2F5A5] text-[#034A3B] flex items-center justify-center hover:bg-white transition-colors">
+                            <!-- REPLACE WITH YOUR INSTAGRAM SVG -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Dropdowns Section (Accordion Triggers) -->
+            <div class="space-y-4 pt-6 text-white font-bold text-lg">
+
+                <!-- Dropdown 1: Popular topics -->
+                <details class="group border-b border-[#0E5244] pb-4">
+                    <summary class="flex items-center justify-start gap-2 cursor-pointer list-none text-white text-xl font-bold">
+                        <span>Popular topics</span>
+                        <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    
+                    <!-- Expanded Content Container -->
+                    <div class="pt-8 pb-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-[#D2F5A5] text-sm">
+                        
+                        <!-- Column 1: For children -->
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-white text-base">For children</h4>
+                            <ul class="space-y-2.5 font-medium">
+                                <li><a href="#" class="hover:underline transition-colors">Child care</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Child care jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Child care centers</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Babysitters</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Babysitting jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Daycare</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Nannies</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Nanny jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Preschools</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Activities & camps</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Tutors</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Tutoring jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Math tutors</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 2: For adults & seniors -->
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-white text-base">For adults & seniors</h4>
+                            <ul class="space-y-2.5 font-medium">
+                                <li><a href="#" class="hover:underline transition-colors">Senior care</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Senior care jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Home care</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Home care jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Caregivers</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Caregiver jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Personal assistants</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Assisted living</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3: For pets -->
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-white text-base">For pets</h4>
+                            <ul class="space-y-2.5 font-medium">
+                                <li><a href="#" class="hover:underline transition-colors">Pet care</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Pet care jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Dog walkers</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Dog walking jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Pet sitters</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Pet sitting jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Dog boarding</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Dog boarding jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4: For home & lifestyle -->
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-white text-base">For home & lifestyle</h4>
+                            <ul class="space-y-2.5 font-medium">
+                                <li><a href="#" class="hover:underline transition-colors">Housekeepers</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Housekeeping jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">House cleaning</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">House cleaning jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Maids</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Maid jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Errand runners</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Part time jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 5: Programs & resources -->
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-white text-base">Programs & resources</h4>
+                            <ul class="space-y-2.5 font-medium">
+                                <li><a href="#" class="hover:underline transition-colors">Articles & resources</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Child care articles & resources</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Senior care articles & resources</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Pet care articles & resources</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">House & home articles & resources</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Complete guide for families & caregivers</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Nanny tax guide</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Community</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Find jobs</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Babysitting rates</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Pet sitting rates</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Housekeeping rates</a></li>
+                                <li><a href="#" class="hover:underline transition-colors">Caregiver rates</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </details>
+
+                <!-- Dropdown 2: Find local caregivers -->
+                <details class="group border-b border-[#0E5244] pb-4" open>
+                    <summary class="flex items-center justify-start gap-2 cursor-pointer list-none text-white text-xl font-bold">
+                        <span>Find local caregivers</span>
+                        <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    
+                    <!-- Tab Container (Uses Alpine.js x-data for Tab Switching) -->
+                    <div x-data="{ activeTab: 'by-state' }" class="pt-6 pb-4">
+                        
+                        <!-- Tab Navigation Bar -->
+                        <div class="flex items-center gap-6 overflow-x-auto border-b border-[#0E5244] pb-1 no-scrollbar text-sm font-bold">
+                            <button @click="activeTab = 'by-state'" :class="activeTab === 'by-state' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                By state
+                            </button>
+                            <button @click="activeTab = 'babysitters'" :class="activeTab === 'babysitters' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Babysitters
+                            </button>
+                            <button @click="activeTab = 'nannies'" :class="activeTab === 'nannies' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Nannies
+                            </button>
+                            <button @click="activeTab = 'daycares'" :class="activeTab === 'daycares' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Daycares
+                            </button>
+                            <button @click="activeTab = 'senior-care'" :class="activeTab === 'senior-care' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Senior Care
+                            </button>
+                            <button @click="activeTab = 'pet-sitters'" :class="activeTab === 'pet-sitters' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Pet Sitters
+                            </button>
+                            <button @click="activeTab = 'housekeepers'" :class="activeTab === 'housekeepers' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Housekeepers
+                            </button>
+                            <button @click="activeTab = 'tutors'" :class="activeTab === 'tutors' ? 'text-white border-b-2 border-white pb-2 -mb-1' : 'text-[#D2F5A5]/80 hover:text-white pb-2 -mb-1 transition-colors'">
+                                Tutors
+                            </button>
+                        </div>
+
+                        <!-- TAB PANELS -->
+                        <div class="pt-6">
+                            
+                            <!-- Panel 1: By State -->
+                            <div x-show="activeTab === 'by-state'" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-2.5 gap-x-6 text-[#D2F5A5] text-sm font-medium">
+                                <div><a href="#" class="hover:underline">Alabama</a></div>
+                                <div><a href="#" class="hover:underline">Indiana</a></div>
+                                <div><a href="#" class="hover:underline">Nebraska</a></div>
+                                <div><a href="#" class="hover:underline">Rhode Island</a></div>
+
+                                <div><a href="#" class="hover:underline">Alaska</a></div>
+                                <div><a href="#" class="hover:underline">Iowa</a></div>
+                                <div><a href="#" class="hover:underline">Nevada</a></div>
+                                <div><a href="#" class="hover:underline">South Carolina</a></div>
+
+                                <div><a href="#" class="hover:underline">Arizona</a></div>
+                                <div><a href="#" class="hover:underline">Kansas</a></div>
+                                <div><a href="#" class="hover:underline">New Hampshire</a></div>
+                                <div><a href="#" class="hover:underline">South Dakota</a></div>
+
+                                <div><a href="#" class="hover:underline">Arkansas</a></div>
+                                <div><a href="#" class="hover:underline">Kentucky</a></div>
+                                <div><a href="#" class="hover:underline">New Jersey</a></div>
+                                <div><a href="#" class="hover:underline">Tennessee</a></div>
+
+                                <div><a href="#" class="hover:underline">California</a></div>
+                                <div><a href="#" class="hover:underline">Louisiana</a></div>
+                                <div><a href="#" class="hover:underline">New Mexico</a></div>
+                                <div><a href="#" class="hover:underline">Texas</a></div>
+
+                                <div><a href="#" class="hover:underline">Colorado</a></div>
+                                <div><a href="#" class="hover:underline">Maine</a></div>
+                                <div><a href="#" class="hover:underline">New York</a></div>
+                                <div><a href="#" class="hover:underline">Utah</a></div>
+
+                                <div><a href="#" class="hover:underline">Connecticut</a></div>
+                                <div><a href="#" class="hover:underline">Maryland</a></div>
+                                <div><a href="#" class="hover:underline">North Carolina</a></div>
+                                <div><a href="#" class="hover:underline">Vermont</a></div>
+
+                                <div><a href="#" class="hover:underline">Delaware</a></div>
+                                <div><a href="#" class="hover:underline">Massachusetts</a></div>
+                                <div><a href="#" class="hover:underline">North Dakota</a></div>
+                                <div><a href="#" class="hover:underline">Virginia</a></div>
+
+                                <div><a href="#" class="hover:underline">Florida</a></div>
+                                <div><a href="#" class="hover:underline">Michigan</a></div>
+                                <div><a href="#" class="hover:underline">Ohio</a></div>
+                                <div><a href="#" class="hover:underline">Washington</a></div>
+
+                                <div><a href="#" class="hover:underline">Georgia</a></div>
+                                <div><a href="#" class="hover:underline">Minnesota</a></div>
+                                <div><a href="#" class="hover:underline">Oklahoma</a></div>
+                                <div><a href="#" class="hover:underline">Washington D.C.</a></div>
+
+                                <div><a href="#" class="hover:underline">Hawaii</a></div>
+                                <div><a href="#" class="hover:underline">Mississippi</a></div>
+                                <div><a href="#" class="hover:underline">Oregon</a></div>
+                                <div><a href="#" class="hover:underline">West Virginia</a></div>
+
+                                <div><a href="#" class="hover:underline">Idaho</a></div>
+                                <div><a href="#" class="hover:underline">Missouri</a></div>
+                                <div><a href="#" class="hover:underline">Pennsylvania</a></div>
+                                <div><a href="#" class="hover:underline">Wisconsin</a></div>
+
+                                <div><a href="#" class="hover:underline">Illinois</a></div>
+                                <div><a href="#" class="hover:underline">Montana</a></div>
+                                <div><a href="#" class="hover:underline">Puerto Rico</a></div>
+                                <div><a href="#" class="hover:underline">Wyoming</a></div>
+                            </div>
+
+                            <!-- Panel 2: Babysitters (Content Placeholder) -->
+                            <div x-show="activeTab === 'babysitters'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Babysitters directory list...</p>
+                            </div>
+
+                            <!-- Panel 3: Nannies (Content Placeholder) -->
+                            <div x-show="activeTab === 'nannies'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Nannies directory list...</p>
+                            </div>
+
+                            <!-- Panel 4: Daycares (Content Placeholder) -->
+                            <div x-show="activeTab === 'daycares'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Daycares directory list...</p>
+                            </div>
+
+                            <!-- Panel 5: Senior Care (Content Placeholder) -->
+                            <div x-show="activeTab === 'senior-care'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Senior Care directory list...</p>
+                            </div>
+
+                            <!-- Panel 6: Pet Sitters (Content Placeholder) -->
+                            <div x-show="activeTab === 'pet-sitters'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Pet Sitters directory list...</p>
+                            </div>
+
+                            <!-- Panel 7: Housekeepers (Content Placeholder) -->
+                            <div x-show="activeTab === 'housekeepers'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Housekeepers directory list...</p>
+                            </div>
+
+                            <!-- Panel 8: Tutors (Content Placeholder) -->
+                            <div x-show="activeTab === 'tutors'" style="display: none;" class="text-[#D2F5A5] text-sm font-medium">
+                                <p>Tutors directory list...</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </details>
+
+                <!-- Dropdown 3: Find care around the world -->
+                <details class="group border-b border-[#0E5244] pb-4" open>
+                    <summary class="flex items-center justify-start gap-2 cursor-pointer list-none text-white text-xl font-bold">
+                        <span>Find care around the world</span>
+                        <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    
+                    <!-- Expanded Content Container (4 Columns) -->
+                    <div class="pt-6 pb-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-2.5 gap-x-6 text-[#D2F5A5] text-sm font-medium">
+                        <div><a href="#" class="hover:underline transition-colors">United States</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Canada (English)</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Germany</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Sweden</a></div>
+
+                        <div><a href="#" class="hover:underline transition-colors">Australia</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Canada (Français)</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Ireland</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Switzerland</a></div>
+
+                        <div><a href="#" class="hover:underline transition-colors">Austria</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Denmark</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">New Zealand</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">The Netherlands</a></div>
+
+                        <div><a href="#" class="hover:underline transition-colors">Belgium (Français)</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Finland</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Norway</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">United Kingdom</a></div>
+
+                        <div><a href="#" class="hover:underline transition-colors">Belgium (Nederlands)</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">France</a></div>
+                        <div><a href="#" class="hover:underline transition-colors">Spain</a></div>
+                        <div></div> <!-- Empty placeholder cell to maintain 4-column alignment -->
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+
+        <div class="px-12">
+            <!-- FOOTER BOTTOM: Legal Disclaimers & Copyright -->
+            <div class="pt-8 border-t border-[#0E5244] space-y-6 text-xs text-[#D2F5A5]/90 font-medium leading-relaxed px-12">
+                
+                <!-- Disclaimer Paragraph 1 -->
+                <p>
+                    <sup>1</sup> Background checks are not always 100% accurate, may not capture an individual's entire criminal history, and cannot guarantee safety. Employees of businesses listed on amandacare.com may not be background checked. Learn more at 
+                    <a href="https://amandacare.com/safety" class="underline hover:text-white transition-colors">amandacare.com/safety</a>.
+                </p>
+
+                <!-- Disclaimer Paragraph 2 -->
+                <p>
+                    *Savings versus brands' full prices based on 2024 and 2025 data. Discounts available through LifeMart platform and are subject to change at any time. 
+                    <a href="#" class="underline hover:text-white transition-colors">Terms</a> apply.
+                </p>
+
+                <!-- Disclaimer Paragraph 3 -->
+                <p>
+                    amandacare.com does not employ any caregiver and is not responsible for the conduct of any user of our site. All information in member profiles, job posts, applications, and messages is created by users of our site and not generated or verified by amandacare.com. You need to do your own diligence to ensure the job or caregiver you choose is appropriate for your needs and complies with applicable laws.
+                </p>
+
+                <!-- Disclaimer Paragraph 4 -->
+                <p>
+                    amandacare.com® HomePay<sup>SM</sup> is a service provided by Breedlove and Associates, LLC, a amandacare.com company.
+                </p>
+
+                <!-- Copyright Line -->
+                <p>
+                    amandacare.com and "There for you" are service marks or registered service marks of amandacare.com, Inc. © 2007-2026 amandacare.com, Inc. All rights reserved.
+                </p>
+
+                <!-- Legal Links Row -->
+                <div class="flex flex-wrap items-center justify-center gap-6 pt-4 text-xs font-semibold">
+                    <a href="#" class="underline hover:text-white transition-colors">Terms of use</a>
+                    <a href="#" class="underline hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="underline hover:text-white transition-colors">California Privacy Notice</a>
+                    <a href="#" class="underline hover:text-white transition-colors">Your Privacy Choices</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Handling Interactivity -->
+    <script>
+        // 1. Single Open Dropdown Logic
+        const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+        dropdowns.forEach(targetDetail => {
+            targetDetail.addEventListener('click', () => {
+                dropdowns.forEach(detail => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+
+        // Close dropdowns if user clicks outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-dropdown')) {
+                dropdowns.forEach(detail => detail.removeAttribute('open'));
+            }
+        });
+
+        // 2. Mobile Drawer Menu Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    </script>
+</body>
+
+</html>
